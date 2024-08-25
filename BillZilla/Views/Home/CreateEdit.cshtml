@@ -1,0 +1,17 @@
+﻿@{
+    ViewData["Title"] = "Create or Edit";
+}
+@model BillZilla.Models.Bill
+
+<div class="text-center">
+    <h1 class="display-4">Create or Edit</h1>
+</div>
+<form asp-action="BillForm">
+    <label>Id</label>
+    <input class="form-control" type="number" placeholder="" asp-for="ID"/>
+    <label class="m-4">Value</label>
+    <input class="form-control" type="number" placeholder="0" asp-for="Value" />
+    <label class="m-4">Description</label>
+    <input class="form-control" type="text" placeholder="Add a description" asp-for="Description"/>
+    <button class="btn btn-danger m-4"  type="submit">OK</button>
+</form>
