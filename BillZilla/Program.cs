@@ -7,7 +7,7 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<BillZillaDbContext>(options =>
-options.UseInMemoryDatabase("ExpenseData"));
+options.UseInMemoryDatabase("BillData"));
 var app = builder.Build();
 
 
